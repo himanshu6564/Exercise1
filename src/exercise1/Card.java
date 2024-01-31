@@ -7,15 +7,24 @@ package exercise1;
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
- * @author dancye
- * @author Paul Bonenfant May 2020
+ * @author Himanshu
+ * @author Himanshu Jan 2024
  */
 public class Card {
 
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
+   
+       public Card(String suit, int value) {
+        this.suit = suit;
+        this.value = value;
+    }
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+
+    Card() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     /**
      * @return the suit
      */
@@ -23,8 +32,10 @@ public class Card {
         return suit;
     }
 
+
+
     /**
-     * @param suit the suit to set
+     * @himanshu suit the suit to set
      */
     public void setSuit(String suit) {
         this.suit = suit;
@@ -38,7 +49,7 @@ public class Card {
     }
 
     /**
-     * @param value the value to set
+     * @himanshu value the value to set
      */
     public void setValue(int value) {
         this.value = value;
